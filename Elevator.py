@@ -19,6 +19,6 @@ class Elevator:
         return self._speed
 
     def getID(self):
-        self._id
+        return self._id
 
 
