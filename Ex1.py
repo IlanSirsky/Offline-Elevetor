@@ -1,12 +1,17 @@
 import sys
+import csv
 
 from Building import *
 from Elevator import *
+from Call import *
+from ElevetorExecuter import *
+
 import json
 
-def ReadJson(building):
+def ReadJson(path):
+
     try:
-        with open(building, "r+") as f:
+        with open(path, "r+") as f:
             elevetors = []
             my_d = json.load(f)
             minFloor = my_d.get("_minFloor")
@@ -19,13 +24,37 @@ def ReadJson(building):
     except IOError as e:
         print(e)
 
+def ReadCSV(path):
+    data = []
+    with open(path) as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            call = Call(a=row[0],time=row[1], src=row[2], dst=row[3],e=row[4])
+            data.append(call)
+    return data
+
+def WriteCSV(path, data_Full):
+    data = []
+    for datas in data_Full:
+        print(datas)
+        data.append(datas.GetFullData())
+    with open(path ,'w+', newline="") as file:
+        csvwrite = csv.writer(file)
+        csvwrite.writerows(data)
+
 
 if __name__ == "__main__":
     args = sys.argv[1:]
-    BuildingNumber = 4 # 1-5
     path_json = args[0]
+    path_csv_input = args[1]
+    path_csv_output = args[2]
+    callData = ReadCSV(path_csv_input)
     ourBuilding = ReadJson(path_json)
+    ourBuilding.elevators.sort() # sort by elevator speed
     print(ourBuilding)
-    ourBuilding.elevators.sort()
-    print(ourBuilding)
+    print(callData)
+    execute = ElevetorExecuter(ourBuilding, callData)
+    execute.execute()
+
+    WriteCSV(path_csv_output, execute.getData())
 
