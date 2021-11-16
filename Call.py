@@ -9,9 +9,9 @@ class Call:
         self._e = e
         self._id = Call.id
         Call.id += 1
-        self._time = time
-        self._src = src
-        self._dst = dst
+        self._time = float(time)
+        self._src = int(src)
+        self._dst = int(dst)
         self._elevator = -1
         self._state = Call.UP if self._src < self._dst else Call.DOWN
 

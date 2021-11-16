@@ -1,4 +1,3 @@
-dict = {}
-print(dict)
-if(dict != {}):
-    print(list(dict)[0])
+a = {"test":1, "asld":"gasg"}
+b = list(a)[0]
+print(type(b))

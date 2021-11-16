@@ -6,17 +6,19 @@ class Elevator:
 
     def __init__(self, data):
         self._id = data.get("_id")
-        self._speed = data.get("_speed")
-        self._minFloor = data.get("_minFloor")
-        self._maxFloor = data.get("_maxFloor")
-        self._closeTime = data.get("_closeTime")
-        self._openTime = data.get("_openTime")
-        self._startTime = data.get("_startTime")
-        self._stopTime = data.get("_stopTime")
+        self._speed = float(data.get("_speed"))
+        self._minFloor = float(data.get("_minFloor"))
+        self._maxFloor = float(data.get("_maxFloor"))
+        self._closeTime = float(data.get("_closeTime"))
+        self._openTime = float(data.get("_openTime"))
+        self._startTime = float(data.get("_startTime"))
+        self._stopTime = float(data.get("_stopTime"))
         self._currentPosition = 0
-        self._dst = 0
+        self._dst = None
+        self._src = None
         self._state = Elevator.IDLE
         self._timeToFinish = 0
+        self.timeInEnd = 0
 
     def __repr__(self):
         return f"ID= {self._id}"
@@ -30,22 +32,25 @@ class Elevator:
     def getFloorTime(self):
         return 1/self._speed
 
-    def getTimeToDST(self, dst):
-        return GetFloorTime(self) * (abs(self._currentPosition - dst)) + self._openTime + self._startTime + self._stopTime + self._closeTime
+    def getTimeToDis(self, src, dst):
+        return self.getFloorTime() * (abs(src - dst)) + self._openTime + self._startTime + self._stopTime + self._closeTime
 
-    def goto(self, dst):
-        self._timeToFinish = getTimeToDST(dst)
+    def goto(self, time, src, dst):
+        self._timeToFinish += self.getTimeToDis(self._currentPosition, src) +  self.getTimeToDis(src, dst)
         self._dst = dst
-        self._state = Elevator.UP if self._currentPosition < dst else Elevator.DOWN
+        self._src = src
+        self._state = Elevator.UP if src < dst else Elevator.DOWN
+        self.timeInEnd = time + self._timeToFinish
 
-    def stop(self, dst):
+    def stop(self):
         self._timeToFinish += self._openTime + self._startTime + self._stopTime + self._closeTime
-        self._dst = dst
+        self.timeInEnd += self._openTime + self._startTime + self._stopTime + self._closeTime
 
     def finish(self):
         self._state = Elevator.IDLE
-        self._currentPosition = self._dst
-        self._dst = null
+        self._currentPosition = 0
+        self._dst = None
+        self._src = None
         self._timeToFinish = 0
 
     def getID(self):

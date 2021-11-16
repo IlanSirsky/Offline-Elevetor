@@ -14,8 +14,8 @@ def ReadJson(path):
         with open(path, "r+") as f:
             elevetors = []
             my_d = json.load(f)
-            minFloor = my_d.get("_minFloor")
-            maxFloor = my_d.get("_maxFloor")
+            minFloor = int(my_d.get("_minFloor"))
+            maxFloor = int(my_d.get("_maxFloor"))
             for elevetor in my_d.get("_elevators"):
                 elevetors.append(Elevator(elevetor))
             return Building(minFloor, maxFloor, elevetors)
@@ -36,7 +36,6 @@ def ReadCSV(path):
 def WriteCSV(path, data_Full):
     data = []
     for datas in data_Full:
-        print(datas)
         data.append(datas.GetFullData())
     with open(path ,'w+', newline="") as file:
         csvwrite = csv.writer(file)
@@ -51,8 +50,6 @@ if __name__ == "__main__":
     callData = ReadCSV(path_csv_input)
     ourBuilding = ReadJson(path_json)
     ourBuilding.elevators.sort() # sort by elevator speed
-    print(ourBuilding)
-    print(callData)
     execute = ElevetorExecuter(ourBuilding, callData)
     execute.execute()
 
