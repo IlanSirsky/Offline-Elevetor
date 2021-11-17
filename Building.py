@@ -9,3 +9,11 @@ class Building:
     def __repr__(self):
         return f"MinFloor: {self._minFloor }\nMaxFloor: {self._maxFloor}\nElevators: {self.elevators}"
 
+    @property
+    def minFloor(self):
+        return self._minFloor
+
+    @property
+    def maxFloor(self):
+        return self._maxFloor
+

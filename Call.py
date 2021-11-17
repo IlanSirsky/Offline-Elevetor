@@ -4,7 +4,7 @@ class Call:
     UP = 1
     DOWN = -1
 
-    def __init__(self, a, time, src, dst, e):
+    def __init__(self, a, time, src, dst, e, elevator):
         self._a = a
         self._e = e
         self._id = Call.id
@@ -12,9 +12,11 @@ class Call:
         self._time = float(time)
         self._src = int(src)
         self._dst = int(dst)
-        self._elevator = -1
+        self._elevator = int(elevator)
         self._state = Call.UP if self._src < self._dst else Call.DOWN
 
+    def GetTime(self):
+        return self._time
 
     def GetData(self):
         return self._time,self._src,self._dst
@@ -28,6 +30,9 @@ class Call:
 
     def GetElevator(self):
         return self._elevator
+
+    def GetState(self):
+        return self._state
 
     def __repr__(self):
         return f"Call id: {self._id}, time: {self._time}, src: {self._src}, dst: {self._dst}\n"

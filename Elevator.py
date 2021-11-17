@@ -17,8 +17,8 @@ class Elevator:
         self._dst = None
         self._src = None
         self._state = Elevator.IDLE
-        self._timeToFinish = 0
-        self.timeInEnd = 0
+        self._timeToFinish = 0 # time to finish the trip of the elevator
+        self.timeInEnd = 0 # time on the clock (timestamp) when the elevator in done
 
     def __repr__(self):
         return f"ID= {self._id}"
@@ -35,18 +35,18 @@ class Elevator:
     def getTimeToDis(self, src, dst):
         return self.getFloorTime() * (abs(src - dst)) + self._openTime + self._startTime + self._stopTime + self._closeTime
 
-    def goto(self, time, src, dst):
+    def goto(self, time, src, dst): # save the time to finish the mission to go to the floor
         self._timeToFinish += self.getTimeToDis(self._currentPosition, src) +  self.getTimeToDis(src, dst)
         self._dst = dst
         self._src = src
         self._state = Elevator.UP if src < dst else Elevator.DOWN
         self.timeInEnd = time + self._timeToFinish
 
-    def stop(self):
+    def stop(self): # add stop on the way
         self._timeToFinish += self._openTime + self._startTime + self._stopTime + self._closeTime
         self.timeInEnd += self._openTime + self._startTime + self._stopTime + self._closeTime
 
-    def finish(self):
+    def finish(self): # if the elevator reached his dst
         self._state = Elevator.IDLE
         self._currentPosition = 0
         self._dst = None

@@ -20,14 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80dcfda9-51c4-4747-b308-2e44790c19d7" name="Default Changelist" comment="return id fix">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinkedList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Offline-Elevetor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Offline-Elevetor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B5.json" beforeDir="false" afterPath="$PROJECT_DIR$/B5.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Building.py" beforeDir="false" afterPath="$PROJECT_DIR$/Building.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Call.py" beforeDir="false" afterPath="$PROJECT_DIR$/Call.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Elevator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Elevator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ElevetorExecuter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElevetorExecuter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +63,17 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\מדמח\שנה ב\תכנות מונחה עצמים\מטלה 1\Offline-Elevetor" />
       <recent name="D:\מדמח\מונחה עצמים\מטלה1\Offline-Elevetor" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.gui">
     <configuration name="Ex1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Offline-Elevetor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Offline-Elevetor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,9 +125,30 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Projects\Python\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -128,8 +158,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Ex1" />
+      <item itemvalue="Python.Ex1 (1)" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.gui" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gui" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Ex1" />
         <item itemvalue="Python.Ex1 (1)" />
@@ -258,54 +295,63 @@
     <option name="LAST_COMMIT_MESSAGE" value="return id fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1506" y="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636992428327">
-      <screen x="-1920" y="540" width="1920" height="1040" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637091253669">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1506" y="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636992428327" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637091253669" />
     <state x="-1319" y="605" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1636992843174">
       <screen x="-1920" y="540" width="1920" height="1040" />
     </state>
     <state x="-1319" y="605" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636992843174" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1637069977699">
-      <screen x="3840" y="0" width="1920" height="1040" />
+    <state x="656" y="98" key="#test" timestamp="1637091242322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="98" key="#test/0.0.1920.1040@0.0.1920.1040" timestamp="1637091242322" />
+    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1637177388435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1637177388435" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1637179819666">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636995949928" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1637069977699" />
-    <state width="1882" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1637069977699">
-      <screen x="3840" y="0" width="1920" height="1040" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637179819666" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1637179819666">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636995949928" />
     <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1637069977699" />
-    <state width="1882" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1637069977699">
-      <screen x="3840" y="0" width="1920" height="1040" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637179819666" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1637179819666">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636995949928" />
     <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1637069977699" />
-    <state width="1882" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1637069977699">
-      <screen x="3840" y="0" width="1920" height="1040" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637179819666" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1637179819666">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636995949928" />
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1637069977699" />
-    <state width="1882" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1882" height="348" key="GridCell.Tab.1.bottom" timestamp="1636731527375">
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637179819666" />
+    <state width="1899" height="351" key="GridCell.Tab.1.bottom" timestamp="1637178267023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1882" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1882" height="348" key="GridCell.Tab.1.center" timestamp="1636731527375">
+    <state width="1899" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637178267023" />
+    <state width="1899" height="351" key="GridCell.Tab.1.center" timestamp="1637178267022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1882" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1882" height="348" key="GridCell.Tab.1.left" timestamp="1636731527375">
+    <state width="1899" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637178267022" />
+    <state width="1899" height="351" key="GridCell.Tab.1.left" timestamp="1637178267022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1882" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
-    <state width="1882" height="348" key="GridCell.Tab.1.right" timestamp="1636731527375">
+    <state width="1899" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637178267022" />
+    <state width="1899" height="351" key="GridCell.Tab.1.right" timestamp="1637178267023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1882" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636731527375" />
+    <state width="1899" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637178267023" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1636730831772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,6 +360,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1636726113003" />
+    <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1637179465610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="76" width="585" height="888" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637179465610" />
     <state x="708" y="364" key="git4idea.ui.GitTagDialog" timestamp="1636730857118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,5 +373,21 @@
     </state>
     <state x="-1297" y="765" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.540.1920.1040@-1920.540.1920.1040" timestamp="1636995872218" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636726587695" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gui.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gui.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
