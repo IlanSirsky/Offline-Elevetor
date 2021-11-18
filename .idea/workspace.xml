@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80dcfda9-51c4-4747-b308-2e44790c19d7" name="Default Changelist" comment="return id fix">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Offline-Elevetor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Offline-Elevetor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B5.json" beforeDir="false" afterPath="$PROJECT_DIR$/B5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Building.py" beforeDir="false" afterPath="$PROJECT_DIR$/Building.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Call.py" beforeDir="false" afterPath="$PROJECT_DIR$/Call.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Elevator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Elevator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElevetorExecuter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ElevetorExecuter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,10 +146,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Ex1" />
       <item itemvalue="Python.Ex1 (1)" />
-      <item itemvalue="Python.test" />
+      <item itemvalue="Python.Ex1" />
       <item itemvalue="Python.gui" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>

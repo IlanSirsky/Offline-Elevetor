@@ -28,7 +28,7 @@ if __name__ == "__main__":
     win = pygame.display.set_mode((size, size))
 
     # set the pygame window name
-    pygame.display.set_caption("Moving rectangle")
+    pygame.display.set_caption("Offline Elevator")
 
     pygame.font.init() # you have to call this at the start,
                        # if you want to use this module.
