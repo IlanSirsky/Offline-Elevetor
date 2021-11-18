@@ -27,20 +27,26 @@ The primary goal is to maximize elevator efficiency, which is achieved by minimi
 - `ElevatorExecuter.py`: Contains the implementaion of our algrorithm described above.
 - `LinkedList.py` and `gui.py`: These files include the lines of code for the GUI that shows how the elevators move at real time for each call being made from the Calls.csv files.
 
-### Input/Output Examples
-Example for Building.json input:
-![Building](https://imgur.com/a/8lc7ZML)
+## Input/Output Examples
+#### Example for Building.json input:
 
-Example for Calls.cvs input:
-![Calls](https://imgur.com/a/dHXi3nB)
+![](https://i.imgur.com/FgpYnIs.png)
+
+#### Example for Calls.cvs input:
+
+![](https://i.imgur.com/yfoKUzL.png)
 - Colum B: time stamp for each call.
 - Colum C: source floor.
 - Colum D: destination floor.
 - Colum F: elevator index allocation.
 
-![Output csv file](https://imgur.com/a/4NBM4kX)
+#### Output csv file:
 
-![Output log](https://imgur.com/a/920pVRD)
+![](https://i.imgur.com/JRWBcNW.png)
+
+#### Output log:
+
+![](https://i.imgur.com/qof9jsX.png)
 
 # How to Run
 We got 3 sections:
@@ -74,7 +80,7 @@ Example: `Ex1.py .\data\Ex1_input\Ex1_Buildings\B5.json .\data\Ex1_input\Ex1_Cal
 Link for a preview of the GUI : https://youtu.be/enZNmPQF7yY.
 
 ## UML
-![UML](https://imgur.com/a/YNxa3zJ)
+![](https://i.imgur.com/8Rz6jW1.png)
 
 ## Literature Research
 - [Elevator Scheduling](http://www.columbia.edu/~cs2035/courses/ieor4405.S13/p14.pdf)
